@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  </head>
+  <body>
+  <nav>
+    
+    <li><a href= "index.html"> HOME </a> </li>
+    <li><a href= "index.html"> NOUN </a> </li>
+    <li><a href= "index.html"> MORE </a> </li>
+    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> All About Fruit</title>
+</head>
+<body>
+  <center>
+  <h2> Fruit Is Awesome </h2>
+</body>
+</html>
+<style>
+li{
+display: inline; 
+ float: right; 
+  padding: 5px ;
+}
+
+a{
+text decoration: none; 
+  color: salmon;
+  font size: 120%;
+}
+</style>
