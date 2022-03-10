@@ -18,85 +18,92 @@
 
 </body>
 </html>
- 
-  <div class="wrapper">
-  <div class="box a"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/many-colorful-jellyfish-on-the-dark-sea-royalty-free-image-1572034000.jpg" width=600px></div>
-  <div class="box b">What you should know about jellyfish before you get stung, Jellyfish </div>
-  <div class="box c">Address <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1376530.3027311272!2d147.0904357203946!3d-17.642403339653757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bdf1446822c713b%3A0x192a574136833cda!2sGreat%20Barrier%20Reef%2C%20Australia!5e0!3m2!1sen!2sus!4v1646691835599!5m2!1sen!2sus" width="450" height="450 " style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-  <div class="box d"><img src="pixil-frame-0.png"></div>
+<div class="wrapper">
+  <div class="box b">STUNG</div>
+  <div class="box c">Background info: We make this event avalible to you so that you can experience the thrill of your life. Our jellyfish come from western australia. They usually bloom when it rains. So since it has rained this past week, we want to show them to you and let them sting you. This event only happens twice a year. April 15 and September 23!!</div>
+  <div class="box d">
+    <div class="box e">E</div>
+    <div class="box f">F</div>
+    <div class="box g">G</div>
+  </div>
 </div>
+
 </html>
 
 
 <style>
-   body {margin: 0;}
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #04AA6D;}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 700px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}
 body {
   margin: 40px;
 }
 
+@media only screen and (max-width: 600px)
+  
 .wrapper {
+ height:95vh;
 display: grid;
     grid-gap: 10px;
-grid-template-columns: [col1-start] 600px  [col2-start] 500px  [col3-start] 700px [col3-end];
-grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
-background-color: #fff;
-color: #444;
+grid-template-columns: repeat(4, [col] 450px ) ;
+grid-template-rows: repeat(2, [row] auto  );
+background-color: none;
 }
 
 .box {
- background-color: #444;
-color: #fff;
-border-radius: 10px;
-padding: 50px;
+background-color: #4C4C9D;
+color: #B191FF;
+border-radius: 5px;
+padding: 20px;
 font-size: 150%;
 
 }
 
+.box .box {
+background-color: #DF99F0;
+color: #102542;
+}
+
 .a {
-grid-column: col1-start / col3-start;
-grid-row: row1-start ;
+grid-column: col / span 2;
+grid-row: row;
 }
+
 .b {
-grid-column: col3-start ;
-grid-row: row1-start / row3-end;
+grid-column: col 3 / span 2;
+grid-row: row;
+font-size:250%;
 }
+
 .c {
-grid-column: col1-start;
-grid-row: row2-start ;
+grid-column: col / span 2;
+grid-row: row 2;
 }
-.d {
-grid-column: col2-start ;
-grid-row: row2-start ;
+
+.d{
+grid-column: col 3 / span 2;
+grid-row: row 2;
+display: grid;
+    grid-gap: 10px;
+grid-template-columns: 1fr 1fr;
 }
+
+.e {
+grid-column: 1 / 3;
+grid-row: 1;
+}
+
+.f {
+grid-column: 1;
+grid-row: 2;
+}
+
+.g {
+grid-column: 2;
+grid-row: 2;
+}
+html { 
+  background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/many-colorful-jellyfish-on-the-dark-sea-royalty-free-image-1572034000.jpg) no-repeat center fixed; 
+  background-size: cover;
+
+
 </style>
    
    
