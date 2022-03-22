@@ -7,11 +7,20 @@
 </head>
 <body>
 
-  <ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="#news">Staff Members</a></li>
-  <li><a href="#about">Our Team</a></li>
-</ul>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">Prices</a>
+  <div class="dropdown">
+    <button class="dropbtn">Classes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+  <a href=""><img src= "https://www.powayusd.com/PUSD/media/WVHS/images/Staff/DarcelGlover.jpg" width=20%> <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/TeriHeard.jpg" width= 20%> Surf lessons</a>
+      <a href="#"><img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/ShannonParker.jpg" width= 20%>Lodging Manager</a>
+      <a href="#"><img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/TinaZiegler.jpg" width=20%>Head Facilitator</a>
+    </div>
+  </div>
+</div>
 <center>
 <h2>The Baja</h2>
 <p>Reserve A Spot At The Baja:Call;(858) 123-5678 <i class="fas fa-phone"></i></p>
@@ -57,36 +66,118 @@
   <span class="dot"  onclick="currentSlide(4)"></span>
 </div>
 
- <style>
-   ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  <h1>About Us</h1>
+<div class="grid-container">
+  <div class="item1">Our main goal is too give you an enjoyable experince that you can rember forever! 
+ testimonial from our last visitor;
+    "Best. Sand. Ever. You won't regret staying on this beach!" - Ms. Neumann
+<h2>Star Rating</h2>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+ </div>
+  <div
+       <div
+  <form action="action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign Up For Mailing List</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+  
+  <style>
+  /* Navbar container */
+.navbar {
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+  background-color: #61988E;
+  font-family: Arial;
 }
 
-li {
+/* Links inside the navbar */
+.navbar a {
   float: left;
-}
-
-li a {
-  display: block;
-  color: #8AA399;
+  font-size: 16px;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #FFD6BA;
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-li a.active {
-  color:#555B6E;
-  background-color: #89B0AE;
-}  
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #EABDA8;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FAF9F9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #80DED9;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
   
 
 p{
@@ -94,7 +185,7 @@ p{
 }
 
 body {
-  background-color:#D5F9DE;
+  background-color:#EBF5DF;
 }
 * {box-sizing:border-box}
 
@@ -130,6 +221,9 @@ body {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -190,6 +284,103 @@ body {
   from {opacity: .4}
   to {opacity: 1}
 }
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #EBF5DF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+>
+.checked {
+  color: orange;
+}
   </style>
   
   <script>
@@ -222,5 +413,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
   </script>
-  
-  
+    
+    
+    
+    
