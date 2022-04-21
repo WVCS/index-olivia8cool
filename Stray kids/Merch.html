@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Meet The Band</a>
+  <a href="#">Merch</a>
+  <a href="#">Tickets</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div> 
+  </div>
+  <center>
+  <h1> Merch</h1>
+ <img src="https://cdn11.bigcommerce.com/s-oep4ulfhpj/images/stencil/1280x1280/products/63692/118727/bang-chan-kfc-skz-logo-stray-kids-merch-socks-mockup-1__95629.1622974689.jpg?c=1" width=400px>
+  <img src="https://ih1.redbubble.net/image.1992806204.4548/ur,apron_realistic_flatlay,tall_portrait,750x1000.jpg"width=400px>
+  <img src="https://cdn.gifteeshirt.com/hoang/2021/08/STRAY-KIDS-VOCALRACHA-Black-Unisex-Kpop-Shirt-kpop-inspired-clothing-stray-kids-merch-Shirt_4.jpg"width=450px>
+  <img src="https://cdn.shopify.com/s/files/1/0281/7815/3547/products/stray-kids-merch-miroh-hoodie-official-kpop-merchandise-online-16048900243531.jpg?v=1630812695"width=450px>
+  <img src="https://cdn.shopify.com/s/files/1/0281/7815/3547/products/stray-kids-merch-sweatshirt-official-kpop-merchandise-online-16048895000651_800x.jpg?v=1603263551"width=450px>
+</body>
+</html>
+
+<style>
+  body {
+  background-color: #DCEDFF;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  color: gray;  
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  color: Black;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #CEE5F2;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #BFDBF7;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #FFF8F8;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+</style>
+
+<script>
+  
+  function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function hideFunction() {
+  if (document.body.scrollTop > 200 ||  document.documentElement.scrollTop > 200)
+    document.getElementById("topBTS").style.display = "block";
+  
+  else{ document.getElementById("topBTS").style.display = "none";
+    
+  }
+}
+
+window.onscroll = function() {hideFunction()};
+  
+</script>
