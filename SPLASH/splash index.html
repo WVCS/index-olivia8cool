@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Tickets</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
+<div style="padding-left:16px">
+</div>
+  
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1 style="font-size:50px">SPLASH</h1>
+  <p>5 star rated water park</p>
+</div>
+  <h1>LOCATIONS</h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252020.67646433902!2d-117.9572195577993!3d33.907644112073235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2b5b933d8111%3A0xc95ef74b5a90fc86!2sSplash*21%20La%20Mirada%20Regional%20Aquatics%20Center!5e0!3m2!1sen!2sus!4v1651525447580!5m2!1sen!2sus" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+  <br>
+<div class="row">
+  <div class="column">
+    <img src="https://seabreeze.com/wp-content/uploads/2017/03/water-park.jpg" alt="Snow" style="width:100%">
+    <br>
+    <center>
+      <h1>FUN</h1>
+  </div>
+  <div class="column">
+    <img src="https://thumbor.thedailymeal.com/55MZ9Y_w6yInkwk8niygCOycw_A=/870x565/https://www.theactivetimes.com/sites/default/files/2018/07/26/0-shutterstock_635727635.jpg" alt="Forest" style="width:100%">
+    <br>
+    <cenetr>
+      <h1>Secure your baby while having fun</h1>
+  </div>
+  <div class="column">
+    <img src="https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/schlitterbahn-nb-en-us/menu/rides--experiences/sb-nb-ridesexperiences-menufeature.jpg" alt="Mountains" style="width:100%">
+    </br>
+  <center>
+  <h1>Fun Rafts</h1>
+  </div>
+</div>
+    <div class="container">
+  <img src="https://previews.123rf.com/images/argus456/argus4561210/argus456121000044/15612752-zugeben-ticket-auf-einem-soliden-wei%C3%9Fen-hintergrund.jpg" alt="Avatar" class="image">
+  <div class="overlay">Tickets <br>$95 one day pass</div>
+</div>
+     <button onclick="topFunction()" id="topBTS">Back to Top</button>
+</div>    
+</body>
+</html>
+  
+  
+  <style>
+    body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://elements-video-cover-images-0.imgix.net/files/102939548/Images.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=eba6c63778f1b2f19222a02d8cc2b4e7");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: none;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #8DA399;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #4B9CD3;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:  #73C2FB;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+img{
+  border-radius:50%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+body {background-color: #f1f3ff;}
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+#topBTS{
+  display: none;
+  position: fixed;
+  bottom: 9%;
+    right: 3%;
+    font-size: 30px;
+  background-color: #FF9F1C;
+  border:none;
+  border-radius:10px;
+  padding: 15px;
+}
+#topBTS:hover{
+background-color: #F71735;
+  color:#41EAD4;
+  cursor:cell;
+  border: dashed 5px YELLOW;
+}
+  </style>   
+  
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function hideFunction() {
+  if (document.body.scrollTop > 200 ||  document.documentElement.scrollTop > 200)
+    document.getElementById("topBTS").style.display = "block";
+  
+  else{ document.getElementById("topBTS").style.display = "none";
+    
+  }
+}
+
+window.onscroll = function() {hideFunction()};
+  </script>
