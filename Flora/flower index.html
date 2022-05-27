@@ -1,1 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <div class="container">
+        <div class="search-wrapper">
+            <div id="searchBox">
+                <!-- <form action=""><input class="bubble" type="text" name="search" id="searcInput"></form> -->
+                <div class="bubble"><p class="S" style="color:  #b4d083;">S</p></div>
+                <div class="bubble" style="left: 50px;"><p style="color: #dbc25f;">E</p></div>
+                <div class="bubble" style="left: 100px;"><p style="color: #e13751;">A</p></div>
+                <div class="bubble" style="left: 150px;"><p style="color: #94305c;">R</p></div>
+                <div class="bubble" style="left: 200px;"><p style="color: #d687b8;">C</p></div>
+                <div class="bubble" style="left: 250px;"><p style="color: #b4d083;">H</p></div>
+                <div class="bubble" style="left: 300px;"><p>🔎</p></div>
+            </div>
 
+        </div>
+    </div>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+  
+  
+<div class="header">
+  <h1>FLORA</h1>
+<img src="https://www.revelstokemountaineer.com/web/wp-content/uploads/2017/06/wildflower.jpg"width=1700px height=400px>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Our Goal</h2>
+    <p>We strive to give the best wildflowers that we provide to those that need/want them. We have given over 700,000 flowers over the past 3 years and hope to give more. Our main events that we sell for are Weddings, Parties, amd Funnerals. <br> <img src="https://c.stocksy.com/a/vSc600/z9/1577833.jpg" width=400px></p>
+  </div>
+  
+  <div class="column">
+    <h2>More</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis. <br> <img src="https://5.imimg.com/data5/SELLER/Default/2020/12/AM/PH/BW/41096391/birthday-flower-bouquet-500x500.jpg" width=400px></p>
+  </div>
+  
+  <div class="column">
+    <h2>Continued</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.<br> <img src="https://www.dallassympathyflorist.com/images/jhsympathy/SF019-11xg.jpg"</p>
+  </div>
+</div>
+
+                         
+                      
+</body>
+</html>
+<style>
+  body{
+  background-color:#F0EBD8;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+h2{
+  color:green;
+}
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,800,900');
+
+* {
+    /* border: 2px solid grey; */
+}
+
+body {
+    margin: 1;
+    height: 2vh;
+}
+
+p {
+    font-family: 'Nunito';
+    font-weight: 800;
+    color: #f9f9f9;
+}
+
+#searchBox {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+}
+
+#searchInput {
+    /* display: none; */
+    z-index: 999;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-wrapper {
+    width: 350px;
+    height: 100px;
+    position: relative;
+    top: 30%;
+
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+}
+
+.inputSearch {
+    font-family: 'Nunito';
+    font-weight: 800;
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    top: 0;
+    margin-top: -10px;
+    border: none;
+    background: #333;
+    outline: none;
+    z-index: 2;
+    color: #f9f9f9;
+    cursor: auto;
+}
+
+.bubble {
+    position: absolute;
+    display: inline-block;
+    margin: 0 -3px 0 -3px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 100%;
+    transition: left 1s, width 1s, border-radius 1.5s, height 1s;
+    z-index: -1;
+}
+
+.animate {
+    animation-name: bubbling;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.S {
+    transition: color 1s;
+}
+
+@keyframes bubbling {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+  </style>
+<script>
+  const bubbles = document.querySelectorAll('.bubble');
+const bubblePosition = [0, 50]
+const search = document.querySelector('.search-wrapper');
+const S = document.querySelector('.S');
+const input = document.createElement('input');
+input.type = 'text';
+input.className = 'inputSearch';
+input.placeholder = '_ type something';
+let counter = 0;
+let distanceAll = [];
+
+function bubbling() {
+    if(counter < bubbles.length) {
+        setTimeout(function() {
+            bubbles[counter].classList.add('animate');
+            let distance = ([counter] * 50) + 'px';
+            distanceAll[counter] = distance;
+            counter++;
+            bubbling(counter);
+        }, 80);
+    }
+}
+
+bubbling();
+
+
+search.addEventListener('mouseover', function() {
+    console.log('ciao');
+    bubbles[0].style = 'width: 350px; border-radius: 10px;  z-index: 1;';
+    bubbles[0].classList.remove('animate');
+    input.placeholder = '>';
+    S.style.color = '#333333';
+    setTimeout(() => {
+        S.innerHTML = '';
+        bubbles[0].appendChild(input);
+        let inputAppended = document.querySelector('.inputSearch');
+        inputAppended.focus();
+        inputAppended.style = 'caret-color: transparent';
+        inputAppended.addEventListener('keypress', (e) => {
+            if(e.keyCode == 13) {
+                console.log('Now I am removing text but you can do whatever you want with text value 😊');
+                inputAppended.value = '';              
+            }            
+        });
+    }, 1000);
+});
+
+search.addEventListener('mouseout', function() {
+    console.log('ciao');
+    let inputAppended = document.querySelector('.inputSearch');
+    bubbles[0].style = '';
+    bubbles[0].classList.add('animate');
+    S.style.color = '#4C83F0';
+    inputAppended.value = '';
+    inputAppended.style = 'caret-color: transparent; z-index: -1;';
+    input.placeholder = '';
+
+    setTimeout(() => {
+        bubbles[0].removeChild(input);
+        S.innerHTML = 'S';
+    }, 1000);
+});
+</script>
