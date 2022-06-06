@@ -8,7 +8,7 @@
 </head>
 <body>
  
-  <div class="container">
+   <div class="container">
         <div class="search-wrapper">
             <div id="searchBox">
                 <!-- <form action=""><input class="bubble" type="text" name="search" id="searcInput"></form> -->
@@ -37,39 +37,48 @@
   
   
 <div class="header">
-  <h1> FLORA </h1>
-<img src="https://www.revelstokemountaineer.com/web/wp-content/uploads/2017/06/wildflower.jpg"width=1700px height=400px>
+  <h1>FLORA</h1>
+<img src="https://www.revelstokemountaineer.com/web/wp-content/uploads/2017/06/wildflower.jpg"width=100% height=400px>
 </div>
 
 <div class="topnav">
-  <a href="index.html">Home</a>
+  <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
 </div>
 
 <div class="row">
   <div class="column">
-    <h2>Our Goal</h2>
-    <p>We strive to give the best wildflowers that we provide to those that need/want them. We have given over 700,000 flowers over the past 3 years and hope to give more. Our main events that we sell for are Weddings, Parties, amd Funnerals. <br> <img src="https://c.stocksy.com/a/vSc600/z9/1577833.jpg" width=400px></p>
+    <h2>More</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+      
+     <br> <img src="https://c.stocksy.com/a/vSc600/z9/1577833.jpg" width=100%></p>
   </div>
   
   <div class="column">
-    <h2>More</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis. <br> <img src="https://5.imimg.com/data5/SELLER/Default/2020/12/AM/PH/BW/41096391/birthday-flower-bouquet-500x500.jpg" width=400px></p>
+    <h2>Our Goal</h2>
+    <p>  We strive to give the best wildflowers that we provide to those that need/want them. We have given over 700,000 flowers over the past 3 years and hope to give more. Our main events that we sell for are Weddings, Parties, amd Funnerals. <br> <img src="https://5.imimg.com/data5/SELLER/Default/2020/12/AM/PH/BW/41096391/birthday-flower-bouquet-500x500.jpg" width=100%></p>
   </div>
   
   <div class="column">
     <h2>Continued</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.<br> <img src="https://www.dallassympathyflorist.com/images/jhsympathy/SF019-11xg.jpg"</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.<br> <img src="https://www.dallassympathyflorist.com/images/jhsympathy/SF019-11xg.jpg" width=100%></p>
   </div>
 </div>
 
-                         
-                      
-</body>
-</html>
-<style>
-  body{
+<h2>Our favorite Product<h2> 
+
+<div class="container">
+  <img src="https://www.bloomsbythebox.com/blog/wp-content/uploads/2015/07/diy-pink-wildflower-bouquet.jpg" width="600px"
+  height="500px" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Price=35$</div>
+  </div>
+</div>
+  </body>
+  
+  <style>
+    body{
   background-color:#F0EBD8;
 }
 * {
@@ -80,11 +89,11 @@ body {
   margin: 0;
 }
 h2{
-  color:green;
+  color:#D3B0AC;
 }
 /* Style the header */
 .header {
-  background-color: #f1f1f1;
+  background-color: #FEF9F3;
   padding: 20px;
   text-align: center;
 }
@@ -92,7 +101,7 @@ h2{
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #E59164;
 }
 
 /* Style the topnav links */
@@ -145,9 +154,9 @@ body {
 }
 
 p {
-    font-family: 'Nunito';
+    font-family: 'Caveat', cursive;
     font-weight: 800;
-    color: #f9f9f9;
+    color: #97899E;
 }
 
 #searchBox {
@@ -233,9 +242,50 @@ p {
         transform: translateY(0px);
     }
 }
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  position:absolute;
+  z-index:0;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #FBC9BF;
+  overflow: hidden;
+  width: 600px;
+  height:500px;
+  transition: .5s ease;
+  z-index:10;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  z-index: 10;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
   </style>
-<script>
-  const bubbles = document.querySelectorAll('.bubble');
+  
+  <script>
+    const bubbles = document.querySelectorAll('.bubble');
 const bubblePosition = [0, 50]
 const search = document.querySelector('.search-wrapper');
 const S = document.querySelector('.S');
@@ -297,4 +347,4 @@ search.addEventListener('mouseout', function() {
         S.innerHTML = 'S';
     }, 1000);
 });
-</script>
+  </script>
