@@ -9,7 +9,11 @@
   </head>
     
       <body>
-     <div id="myDIV">
+	      <div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
           <nav>
     <li><a href= "Fruit.html"> FRUIT </a> </li>
               <li><a href= "Convince.html"> CONVINCE </a> </li>   
@@ -32,46 +36,60 @@
           
 </html>
 <style>
-    *, *:after, *:before {
-	box-sizing: border-box;
+  body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-	font-family: "Inter", sans-serif;
-	
+* {
+  box-sizing: border-box;
 }
 
-
-.container {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	right: 0;
-	bottom: 0;
-	width: 48%%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
 }
 
-
-
-h1 {
-	color: #FFB6C1;
-	font-size: calc(0em + 10vw) ;  
-	font-weight: 900;
-	text-shadow: 
-		-0.0075em 0.0075em 0 #FC6C85,
-		0.005em 0.005em 0 #FC8EAC,
-		0.01em 0.01em 0 color-mix(#fff, #e91e63, 62%), 
-		0.015em 0.015em color-mix(#fff, #e91e63, 64%), 
-		0.02em 0.02em 0 color-mix(#fff, #e91e63, 66%), 
-		0.025em 0.025em 0 color-mix(#fff, #e91e63, 68%),
-		0.03em 0.03em 0 color-mix(#fff, #e91e63, 70%),
-		0.035em 0.035em 0 color-mix(#fff, #e91e63, 72%);
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
 }
 
+.left h2 {
+  padding-left: 8px;
+}
 
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
     
     
     
@@ -100,3 +118,21 @@ text decoration: none;
 }
  
 </style>
+		      
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
